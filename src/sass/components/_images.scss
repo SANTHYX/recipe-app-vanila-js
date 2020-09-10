@@ -1,0 +1,34 @@
+//components/images.scss
+
+#navbar {
+	img {
+		display: flex;
+		align-self: center;
+	}
+}
+
+#showcase {
+	background: linear-gradient(
+			90deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(27, 150, 199, 0.904) 0%,
+			rgba(29, 163, 216, 0.637) 100%
+		),
+		url('../img/hero.jpg') no-repeat center center/cover;
+}
+
+#site-support {
+	img {
+		width: 300px;
+	}
+}
+
+.recipes-list-item {
+	img {
+		display: flex;
+		height: 58px;
+		width: 56px;
+		border: none;
+		border-radius: 100px;
+	}
+}
