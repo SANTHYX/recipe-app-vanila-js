@@ -1,0 +1,14 @@
+//components/recipes-list.scss
+
+#recipes-list {
+	margin-top: 10px;
+	background: whitesmoke;
+	height: 350px;
+	overflow-y: scroll;
+}
+
+#pagination {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}

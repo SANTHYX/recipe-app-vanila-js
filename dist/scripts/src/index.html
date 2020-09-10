@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="./sass/main.scss" />
+		<title>RecipesParadise</title>
+	</head>
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1><img src="./img/Logo.svg" alt="Logo.png" /></h1>
+				<ul>
+					<li><a href="#about-site">About</a></li>
+					<li><a href="#site-support">Sponsors</a></li>
+					<li><a href="#recipe-finder">Recipes</a></li>
+					<li><a href="#used-technologies">Technologies</a></li>
+				</ul>
+				<button id="hamburger-menu"><i class="las la-bars"></i></button>
+			</nav>
+		</header>
+		<main id="content">
+			<section id="showcase">
+				<div class="text-wraper marg-right-50px">
+					<h1>
+						<span>Find Your Perfect</span> Dinner From Thousands Of Recipes
+					</h1>
+					<a href="#recipe-finder" id="recepie-move-btn">Let's Start</a>
+				</div>
+			</section>
+			<section id="about-site">
+				<div class="text-wraper marg-left-50px">
+					<h2>Why Site Has Been Build?</h2>
+					<p>
+						I wanted to train Sass and modular Vanila JavaScript. Also, i wanted
+						to try use bundlers like Webpack with loaders to learn the setup of
+						bigger projects. Application are based on Recipe API from EDAMAM. Of
+						course, i saw that clickbite titles on youtube with same ideas of
+						project. I Understand that i dont do something original, but i'm
+						trying to do it by myself. If i complete my app, then i watch one of
+						this tutorials looking for good practices or some new tricks.
+					</p>
+					<h3>Provided Functionality:</h3>
+					<ul>
+						<li>Searching recipes <i class="lar la-check-circle"></i></li>
+						<li>Displaying ingredients <i class="lar la-check-circle"></i></li>
+						<li>Displaying instructions <i class="lar la-check-circle"></i></li>
+						<li>Displaying macros <i class="lar la-check-circle"></i></li>
+					</ul>
+				</div>
+			</section>
+			<section id="site-support">
+				<h3>Site are using API by</h3>
+				<img src="img/Edamam_logo.png" alt="Edamam_logo.png" />
+			</section>
+			<section id="used-technologies">
+				<h3>Website build with</h3>
+			</section>
+			<section id="recipe-finder">
+				<div class="search-component-wraper marg-right-50px">
+					<div class="btn-wraper">
+						<input type="text" name="search-field" id="search-recipes-field" />
+						<button type="submit" id="search-btn">
+							<i class="las la-search"></i>
+						</button>
+					</div>
+					<div id="recipes-list">
+						<ul></ul>
+					</div>
+					<div id="pagination">
+						<button id="previous-results">
+							<i class="las la-chevron-circle-left"></i>
+						</button>
+						<label for="page-number" id="page-number">1</label>
+						<button id="next-results">
+							<i class="las la-chevron-circle-right"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">Created By &copy; SANTHYX</footer>
+	</body>
+</html>
