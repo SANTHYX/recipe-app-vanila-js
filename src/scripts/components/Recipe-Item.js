@@ -1,5 +1,3 @@
-import { recipesList } from '../vendors/recipes-list-binds';
-
 export class RecipeItem {
 	TrimLabel(object) {
 		const splitLabel = object.recipe.label.split('');
@@ -8,14 +6,14 @@ export class RecipeItem {
 			: object.recipe.label;
 	}
 
-	render(object) {
-		recipesList.insertAdjacentHTML(
+	Render(list, object) {
+		list.insertAdjacentHTML(
 			'beforeend',
 			`<li>
-			<a href="">
+			<a href="#${object.recipe.uri.split('_')[1]}">
 				<div class="recipes-list-item">
+					<img src="${object.recipe.image}" alt="recipe.jpg" />
 					<h3>${this.TrimLabel(object)}</h3>
-					<img src="${object.recipe.image}" alt="xd" />
 				</div>
 			</a>
 		</li>`

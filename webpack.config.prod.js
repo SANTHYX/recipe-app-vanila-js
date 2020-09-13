@@ -4,11 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	entry: ['babel-polyfill', './src/scripts/main.js'],
-	devtool: 'eval-cheap-module-source-map',
+	devtool: 'cheap-source-map',
 	output: {
-		filename: './scripts/main.js',
+		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	plugins: [
@@ -26,7 +26,7 @@ module.exports = {
 						loader: 'file-loader',
 						options: {
 							name: '[name].css',
-							outputPath: 'styles/'
+							outputPath: '/styles'
 						}
 					},
 					{

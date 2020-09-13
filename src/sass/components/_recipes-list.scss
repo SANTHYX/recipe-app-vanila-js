@@ -2,7 +2,14 @@
 
 #recipes-list {
 	margin-top: 10px;
-	background: whitesmoke;
+	background: rgba(245, 245, 245, 0.664);
 	height: 350px;
+	border-radius: 15px;
 	overflow-y: scroll;
+}
+
+#pagination {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
