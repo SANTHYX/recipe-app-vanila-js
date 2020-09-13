@@ -1,8 +1,10 @@
 import { Recipe } from '../models/Recipe';
 import { RecipeItem } from '../components/Recipe-Item';
+import { RecipeDetails } from './Recipe-Details';
 
 const recipe = new Recipe();
 const recipeItem = new RecipeItem();
+export const recipeDetails = new RecipeDetails();
 
 export class RecipesList {
 	constructor() {
@@ -28,11 +30,12 @@ export class RecipesList {
 		}
 	}
 
-	async DisplayRecipeAsync(id) {
+	async DisplayRecipeAsync(wraper, id) {
 		try {
 			await recipe.GetByIdAsync(id);
 			if (!recipe.IsDataEmpty(recipe.recipe)) {
-				console.log(recipe.recipe);
+				recipeDetails.Render(wraper, recipe.recipe);
+				recipeDetails.RenderIngedients(recipe.recipe);
 			}
 		} catch (error) {
 			console.log(new Error(error));

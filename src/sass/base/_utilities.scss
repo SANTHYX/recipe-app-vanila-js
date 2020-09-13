@@ -22,12 +22,6 @@
 	.text-wraper {
 		width: 50vw;
 	}
-}
-
-@media screen and (max-width: 480px) {
-	.text-wraper {
-		width: 100vw;
-	}
 	.marg-right-50px {
 		margin-right: 0;
 	}
@@ -38,5 +32,11 @@
 
 	.marg-top-50px {
 		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.text-wraper {
+		width: 100vw;
 	}
 }

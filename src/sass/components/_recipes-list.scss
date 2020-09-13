@@ -3,7 +3,7 @@
 #recipes-list {
 	margin-top: 10px;
 	background: rgba(245, 245, 245, 0.664);
-	height: 350px;
+	height: 70vh;
 	border-radius: 15px;
 	overflow-y: scroll;
 }
@@ -12,4 +12,10 @@
 	margin-top: 10px;
 	display: flex;
 	justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+	#recipes-list {
+		height: 350px;
+	}
 }

@@ -6,6 +6,11 @@
 	border-bottom-right-radius: 10px;
 	background: rgb(58, 122, 243);
 	border: none;
+	transition: 0.32s;
+}
+
+#search-btn:hover {
+	background: rgb(84, 140, 246);
 }
 
 #recepie-move-btn {

@@ -2,15 +2,16 @@ import '../sass/main.scss';
 import '../img/hero.jpg';
 import { RecipesList } from './components/Recipes-List.js';
 import { RecipesListBinds as Binds } from './vendors/recipes-list-binds.js';
+import { recipeDetails } from './components/Recipes-List.js';
 
 const {
 	searchBtn,
 	searchField,
 	list,
-	//item,
 	previousResultsBtn,
 	nextResultsBtn,
-	pageNumberLabel
+	pageNumberLabel,
+	recipeWraper
 } = Binds;
 const recipesList = new RecipesList();
 
@@ -36,5 +37,6 @@ nextResultsBtn.addEventListener('click', () => {
 
 list.addEventListener('click', (e) => {
 	const id = e.target.closest('a').hash.slice(1);
-	recipesList.DisplayRecipeAsync(id);
+	recipeDetails.Clear(recipeWraper);
+	recipesList.DisplayRecipeAsync(recipeWraper, id);
 });
